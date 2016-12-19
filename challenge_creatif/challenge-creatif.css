@@ -1,0 +1,142 @@
+body{
+  background-image: url("http://img0.mxstatic.com/wallpapers/58882bea8523f7959e5685e7ada05822_large.jpeg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#etoile1 img{
+width: 80px;
+height: 80px;
+position: absolute;
+animation: etoile 3s infinite;
+}
+#etoile2 img{
+  width: 90px;
+  height: 90px;
+  left: 170px;
+  position: absolute;
+  animation: etoiles 5s infinite;
+}
+#etoile3 img{
+  width: 100px;
+  height: 100px;
+  left: 250px;
+  position: absolute;
+  animation: etoile 7s infinite;
+}
+#etoile4 img{
+  width: 100px;
+  height: 100px;
+  left: 900px;
+  position: absolute;
+  animation: etoiles 3s infinite;
+}
+#etoile5 img{
+  width: 100px;
+  height: 100px;
+  left: 700px;
+  position: absolute;
+  animation: etoile 7s infinite;
+}
+#etoile6 img{
+  width: 100px;
+  height: 100px;
+  left: 500px;
+  position: absolute;
+  animation: etoile 4s infinite;
+}
+#etoile7 img{
+  width: 100px;
+  height: 100px;
+  left: 600px;
+  position: absolute;
+  animation: etoiles 9s infinite;
+}
+#etoile8 img{
+  width: 100px;
+  height: 100px;
+  left: 1100px;
+  position: absolute;
+  animation: etoiles 11s infinite;
+}
+
+@keyframes etoile {
+from{top: 0px; transform: rotate(0deg);}
+  to{top: 650px; transform:rotate(600deg);}
+}
+@keyframes etoiles {
+  from{top: 0px;}
+  to{top: 650px;}
+}
+@keyframes noel {
+  from {margin-left: 0px;}
+  to {margin-left: 1200px;}
+}
+@keyframes cerf {
+  from{right:0px;}
+  to{right:1200px;}
+}
+@keyframes hautbas {
+  from{top: 50px;}
+  to{top: 5px;}
+}
+@keyframes cadeaux {
+  from{left: 0px;}
+  to{left: 15px;}
+}
+@keyframes cadeau2 {
+  from{right: 0px;}
+  to{right: 300px;}
+}
+
+.glisse{
+  width: 100%;
+  height: 10%;
+  margin-top: 500px;
+}
+#noel img
+{
+  height: 100%;
+  width: 10%;
+  animation: noel 9s infinite alternate; /*alternate pour que le père noel marche d'en un sens et dans l'autre*/
+  z-index: 1;
+}
+.vole{
+  width: 100%;
+  height: 10%;
+}
+#cerf img{
+  position: absolute;
+  height: 20%;
+  width: 10%;
+  right: 0%;
+  top: 65%;
+  animation: cerf 15s infinite;
+  /*transform: scaleX(-1);/*pour retourner l'image*/
+}
+
+#cadeau1 img{
+  position: absolute;
+  height: 15%;
+  width: 7%;
+  bottom: -14%;
+  animation: cadeaux 0.05s infinite alternate;
+}
+.gift{
+  position: absolute;
+  animation: cadeau2 4s infinite;
+  height: 15%;
+  bottom: -8%;
+}
+.cadeau2{
+  height: 100%;
+  /*left: 500px;*/
+  bottom: -8%;
+}
+.cadeaurotate{
+  animation: spin 2s infinite;
+}
+@keyframes spin {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
